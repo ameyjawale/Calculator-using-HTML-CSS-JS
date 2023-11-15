@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    background-color: #3498DB;
+    height: 100%;
+    margin-top: 100px;
+  }
+  .calculator {
+    width: 350px;
+    height: auto;
+    margin: 70px auto 0;
+    overflow: auto ;
+    box-shadow: 4px 10px rgba(22, 22, 22, 0.2);
+  }
+  .screenpart {
+    position: relative;
+    height: 125px;
+    background-color: white;
+  }
+  
+  .screenpart .screen {
+    position: relative;
+    width: 100%;
+    top: 20%;
+    height: 80%;
+  }
+  
+  .screen > div  {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 5px;
+    text-align: right;
+  }
+  
+  .screen .input {
+    color: #646464;
+    height: 60%;
+    font-size: 30px;
+  }
+  
+  .screen .result {
+    color: #c0bebe;
+    font-size: 15px;
+    height: 40%;
+  }
+  .keypad {
+    background-color: #191a19;
+    height: 300px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .keypad section {
+    position: relative;
+    height: 100%;
+    float: left;
+    display: flex;
+  }
+  
+  .keys{
+    width: 100%;
+  }
+
+  .keys .column {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .keys .column span {
+    position: relative;
+    line-height: 1;
+    padding: 10px;
+    flex-grow: 1;
+    font-size: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.9s;
+  }
+
+  .keys .column .greykeys{
+    background-color: #646464;
+  }
+
+  .keys .greykeys{
+    background-color: #646464;
+  }
+
+  .keys .column span:hover {
+    background-color: rgba(170, 54, 54, 0.39);
+  }
+  .keys .column .backspace:hover,.keys .column .clearall:hover{
+    background-color: rgba(255, 0, 0, 0.712);
+  }
+  .keys .column .equals{
+    background-color: rgba(255, 123, 0, 0.733);
+  }
+  .keys .column .equals:hover{
+    background-color: rgba(0, 255, 64, 0.733);
+  }

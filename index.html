@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MINI PROJECT (CALCULATOR)</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <main class="calculator">
+      <div class="screenpart">
+        <section class="screen">
+          <div class="input"></div>
+          <div class="result"></div>
+        </section>
+      </div>
+
+      <div class="keypad">
+        <section class="keys">
+          <div class="column">
+            <span class="clearall greykeys" id="reload">CE</span>
+            <span data-key="7">7</span>
+            <span data-key="4">4</span>
+            <span data-key="1">1</span>
+            <span data-key="00">00</span>
+          </div>
+
+          <div class="column">
+            <span class="greykeys" data-key="%">%</span>
+            <span data-key="8">8</span>
+            <span data-key="5">5</span>
+            <span data-key="2">2</span>
+            <span data-key="0">0</span>
+          </div>
+
+          <div class="column">
+            <span class="backspace greykeys">⌫</span>
+            <span data-key="9">9</span>
+            <span data-key="6">6</span>
+            <span data-key="3">3</span>
+            <span data-key=".">.</span>
+          </div>
+          <div class="column greykeys">
+            <span data-key="÷">÷</span>
+            <span data-key="x">x</span>
+            <span data-key="-">-</span>
+            <span data-key="+">+</span>
+            <span class="equals" data-key="=">=</span>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
